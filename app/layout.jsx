@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Charan Kumar | Design & Developer",
   description:
-    "Web Developer, UI/UX & Graphic Designer. 1.8 years of experience. 25+ projects shipped.",
+    "Web Developer, UI/UX & Graphic Designer. 1.5+ years of experience. 25+ projects shipped.",
 };
 
 export const viewport = {
