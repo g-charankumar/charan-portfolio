@@ -1,0 +1,43 @@
+.shuffle-parent {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  will-change: transform;
+  line-height: 1;
+  /* Reduced font-size and removed specific font-family to match the Hero style better */
+  font-size: inherit; 
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.shuffle-parent.is-ready {
+  visibility: visible;
+}
+
+.shuffle-char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.shuffle-char-wrapper > span {
+  display: inline-flex;
+  will-change: transform;
+}
+
+.shuffle-char {
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Ensure anodized-text effect works with nested spans */
+.shuffle-parent.anodized-text .shuffle-char {
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Inherit the animation and shadow if needed */
+  animation: inherit;
+  text-shadow: inherit;
+}
